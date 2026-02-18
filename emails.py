@@ -6,7 +6,7 @@ import mimetypes
 import os
 from dotenv import load_dotenv
 
-_ = load_dotenv()
+load_dotenv()
 
 class EmailSender:
     def __init__(
@@ -69,7 +69,7 @@ if __name__ == "__main__":
         smtp_server="smtp.gmail.com",
         port=587,
         username=os.getenv("CB_EMAIL"),
-        password=os.getenv("CB_EMAIL_PWD"),
+        password=os.getenv("CB_PASSWORD"),
         use_tls=True
     )
     email_sender.send_email(
