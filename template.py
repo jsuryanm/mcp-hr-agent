@@ -16,6 +16,7 @@ list_of_files = [
     f"src/{project_name}/meeting_manager.py",
     f"src/{project_name}/schemas.py",
     f"src/{project_name}/ticket_manager.py",
+    "src/logger/__init__.py",
     "emails.py",
     "server.py",
     "app.py",
