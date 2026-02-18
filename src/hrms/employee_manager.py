@@ -59,6 +59,6 @@ class EmployeeManager:
 
 if __name__ == "__main__":
     em = EmployeeManager()
-    em.add_employee(EmployeeCreate(name="John Doe", manager_id=None))
-    em.add_employee(EmployeeCreate(name="Mama Doe", manager_id="E001"))
+    em.add_employee(EmployeeCreate(name="Sam Jackson", manager_id=None))
+    em.add_employee(EmployeeCreate(name="Ashley James", manager_id="E001"))
     print(em.get_next_emp_id())

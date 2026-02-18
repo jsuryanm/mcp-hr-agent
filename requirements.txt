@@ -3,4 +3,9 @@ mcp-cli
 streamlit 
 pydantic
 python-dotenv
+langchain
+langchain-core
+langchain-community 
+langchain-groq
+groq
 -e .

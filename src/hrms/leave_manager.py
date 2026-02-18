@@ -26,7 +26,12 @@ class LeaveManager:
         if available < requested:
             return f"Insufficient leave balance: requested {requested}, available {available}."
         self.employee_leaves[employee_id]["balance"] -= requested
-        self.employee_leaves[employee_id]["history"].extend(leave_dates)
+        
+        for d in req.leave_dates:
+            self.employee_leaves[employee_id]["history"].append({
+                "leave_date": d
+            })
+
         return (f"Leave applied for {requested} day(s). Remaining balance: "
                 f"{self.employee_leaves[employee_id]['balance']}")
 

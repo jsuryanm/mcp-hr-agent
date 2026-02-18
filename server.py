@@ -19,7 +19,7 @@ leave_manager = LeaveManager()
 ticket_manager = TicketManager()
 meeting_manager = MeetingManager()
 
-seed_services(employee_manager, leave_manager, meeting_manager, ticket_manager)
+# seed_services(employee_manager, leave_manager, meeting_manager, ticket_manager)
 
 
 emailer = EmailSender(
@@ -34,7 +34,7 @@ emailer = EmailSender(
 
 @mcp.tool() 
 def add_employee(emp_name: str,
-                 manager_id: int,
+                 manager_id: str,
                  email: str) -> str:
     """
     Add a new employee to the HRMS system.
