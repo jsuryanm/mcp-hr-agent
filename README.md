@@ -130,4 +130,4 @@ Python, LangChain, Groq, MCP, Streamlit, Pydantic, AsyncIO
 
 ## 👨‍💻 Author
 
-Surya -- https://github.com/jsuryanm
+Jayasuryan -- https://github.com/jsuryanm
