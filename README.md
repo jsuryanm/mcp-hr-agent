@@ -25,7 +25,7 @@ more.
 
 ### 🧠 Agentic AI
 
--   LangChain-based reasoning agent
+-   LangChain-groq reasoning agent (openai/gpt-oss-20b)
 -   MCP tool calling
 -   Modular architecture
 -   Easy to extend tools
@@ -41,8 +41,15 @@ more.
 
 ## 🏗️ Architecture
 
-User (Streamlit UI) ↓ LangChain Agent ↓ MCP Client ↓ MCP Server (HR
-Tools) ↓ Database / Mock Data
+User (Streamlit UI) 
+    ↓ 
+LangChain Agent 
+    ↓ 
+  MCP Client 
+    ↓ 
+  MCP Server (HR Tools) 
+    ↓ 
+  Database / Mock Data
 
 ------------------------------------------------------------------------
 
